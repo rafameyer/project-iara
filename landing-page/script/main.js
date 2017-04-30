@@ -168,31 +168,20 @@ new WOW().init();
 
 // map
 
-var parser = new ol.format.WMTSCapabilities();
-var map;
+$("#buscar").submit(function() {
 
-fetch('http://services.sentinel-hub.com/v1/wmts/caa8e08e-64cc-dcc6-0385-1a9f77a843ea?REQUEST=GetCapabilities').then(function(response) {
-return response.text();
-}).then(function(text) {
-var result = parser.read(text);
-var options = ol.source.WMTS.optionsFromCapabilities(result,
-    {layer: 'NDVI', matrixSet: 'PopularWebMercator512'});
+    var geocoder = new google.maps.Geocoder();
+    var address = $("#buscar").serialize();
 
-    map = new ol.Map({
-      layers: [
-        new ol.layer.Tile({
-          source: new ol.source.OSM(),
-          opacity: 0.7,
-        }),
-        new ol.layer.Tile({
-          opacity: 1,
-          source: new ol.source.WMTS(options)
-        })
-      ],
-      target: 'map',
-      view: new ol.View({
-        center: ol.proj.fromLonLat([-51.81140894, -23.92042236]),
-        zoom: 20
-      })
+    geocoder.geocode( { 'address': address}, function(results, status) {
+
+        if (status == google.maps.GeocoderStatus.OK) {
+            var latitude = results[0].geometry.location.lat();
+            var longitude = results[0].geometry.location.lng();
+        }
     });
+
 });
+
+
+

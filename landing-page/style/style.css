@@ -14,7 +14,7 @@ body {
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: #2c3e50;
-  font-size: 14px;
+  font-size: 18px;
   box-sizing: border-box;
   overflow-x: hidden; }
 
@@ -109,7 +109,9 @@ section {
   .corpo p {
     text-align: justify;
     width: 100%;
-    max-width: 600px; }
+    font-size: 22px;
+    max-width: 80%;
+    margin: 0 10%; }
 
 .typed-cursor {
   opacity: 0; }
@@ -281,7 +283,7 @@ nav {
 
 /* SERVICOS */
 #servicos {
-  background-color: #f6f6f6;
+  background-color: #e8e8e8;
   padding-left: 0;
   padding-right: 0; }
   #servicos #logo-equipe img {
@@ -363,7 +365,7 @@ _:-ms-fullscreen, :root figure {
   height: 100%; }
 
 #portfolio {
-  background-color: #f6f6f6;
+  background-color: #e8e8e8;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 150px; }
@@ -435,15 +437,17 @@ section[id='sobre'] {
   background-size: cover; }
   #sobre #sobre2 {
     background-color: #000;
-    opacity: .5;
+    opacity: .7;
     width: 100%;
     padding-top: 150px;
     padding-bottom: 150px; }
     #sobre #sobre2 h2 {
       margin-bottom: 10vh;
-      color: #ecf0f1; }
+      color: #ecf0f1;
+      opacity: 1 !important; }
     #sobre #sobre2 p {
-      color: #ecf0f1; }
+      color: #ecf0f1;
+      opacity: 1 !important; }
 
 /* CITACAO */
 #citacao {
@@ -458,7 +462,7 @@ section[id='sobre'] {
 
 /* CONTATO */
 #contato {
-  background-color: #f6f6f6; }
+  background-color: #e8e8e8; }
   #contato .cabeca {
     margin-bottom: 10vh; }
     #contato .cabeca p {
