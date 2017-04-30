@@ -159,7 +159,7 @@ $("#logo").addClass('animated fadeIn');
 
 $(".lema").typed({
     strings: ["Space Apps Challenge"],
-    typeSpeed: 70,
+    typeSpeed: 70
 });
 
 $("#botao").addClass('animated bounce');
@@ -178,6 +178,7 @@ $("#buscar").submit(function() {
         if (status == google.maps.GeocoderStatus.OK) {
             var latitude = results[0].geometry.location.lat();
             var longitude = results[0].geometry.location.lng();
+            location.href = "map.html?lat=-"+latitude+"&long="+longitude;
         }
     });
 
