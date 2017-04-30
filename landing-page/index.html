@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empresa de desenvolvimento de aplicações web e mobile">
+    <meta name="author" content="Imagination - Agência Digital">
+
+    <title>Nasa Space Apps Challenge</title>
+
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/animate.css">
+    <link rel="stylesheet" href="http://openlayers.org/en/v3.17.1/css/ol.css" type="text/css">
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+
+    <header id="home">
+        <video id="video" class="video" muted loop autoplay="">
+            <source src="img/aurora.mp4" type="video/mp4">
+        </video>
+        <h1 id="logo"><img src="img/logo_oficial.png" alt="Imagination - Agência Digital" ></h1>
+        <p class="lema"></p>
+        <div id="botao">
+            <a href="#portfolio" class="botao">EXPLORE</a>
+        </div>
+    </header>
+
+    <nav id="nav">
+        <a href="index.html"><img src="img/logo_min.jpg" alt="Space apps"></a>
+
+        <div class="btn-group visible-xs">
+            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="#home">HOME</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#portfolio">APPLICATION</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#sobre">ABOUT</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#servicos">TEAM</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#contato">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <ul class="hidden-xs">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#portfolio">APPLICATION</a></li>
+            <li><a href="#sobre">ABOUT</a></li>
+            <li><a href="#servicos">TEAM</a></li>
+            <li><a href="#contato">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section id="portfolio">
+        <div class="cabeca wow bounceInUp" id="cabeca2">
+            <h2>PROJECT IARA</h2>
+            <div id="project"><img src="img/logo-iara.png" alt=""></div>
+        </div>
+        <div id="aplicacao" class="wow bounceInLeft corpo">
+            <p>By using Sentinel's Satellite Images and NASA's open source data we we're able to isolate rivers in the whole word that don't have enough vegetation to safeguard their natural course and wildlife.</p>
+            <p>We applied color to the different levels of vegetation and developed our own API to separate every individual pixel as a different kind of green area, and now we can understand in real time the locations that are in need of attention by the local government.</p>
+        </div>
+
+        <div id="map" class="map" width="70%" height="600" style="padding-top: 100px; margin: 0 15%;" ></div>
+        
+    </section>
+
+    <section id="sobre">
+        <div id="sobre2">
+            <h2 id="cabeca3" class="wow bounceInLeft">ABOUT</h2>
+            <div class="wow bounceInRight corpo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="cabeca wow bounceInDown" id="cabeca1">
+            <h2>TEAM</h2>
+            <div id="logo-equipe"><img src="img/logo-equipe.png" alt=""></div>
+        </div>
+        <div class="itens wow bounceInLeft" id="iten1">
+            <div class="avatar"><img src="img/ederson.jpg" alt=""></div>
+            <h3>ENDERSON MENEZES</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="itens wow bounceInUp" id="iten2">
+            <div class="avatar"><img src="img/lucas.jpg" alt=""></div>
+            <h3>LUCAS BETINELI</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="itens wow bounceInRight" id="iten3">
+            <div class="avatar"><img src="img/matheus.jpg" alt=""></div>
+            <h3>MATHEUS BETINELI</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="itens wow bounceInLeft" id="iten4">
+            <div class="avatar"><img src="img/rafael.jpg" alt=""></div>
+            <h3>RAFAEL MEYER</h3>
+            <p>Software Engineering Student and Mobile Developer. Even with a short career time, i have worked in different fields of work. My professional training is a union between three sectors: Entrepreneurship, Scientific Research and Job Market.</p>
+        </div>
+        <div class="itens wow bounceInDown" id="iten5">
+            <div class="avatar"><img src="img/tarik.jpg" alt=""></div>
+            <h3>TARIK CARAMANICO</h3>
+            <p>Back-End and Front-End developer, with a focus on Web, Mobile, and Unity systems. Programming Logic Certificates, Advanced PHP and Asterisk. For more than 10 years in the field.</p>
+        </div>
+
+        <div class="itens wow bounceInRight" id="iten6">
+            <div class="avatar"><img src="img/william.jpg" alt=""></div>
+            <h3>WILLIAM BASSALOBRE</h3>
+            <p>A student of softwares and new technologies, always seeking new ideas, to improve my creative potential every day.</p>
+        </div>
+    </section>
+
+    <div id="citacao">
+        <span class="typed"></span>
+        <p>Albert Einstein</p>
+    </div>
+
+    <section id="contato">
+        <div class="cabeca wow bounceInDown" id="cabeca4">
+            <h2>CONTACT</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div id="form" class="wow bounceInLeft">
+            <form method="post" action="">
+                <div class="group">
+                    <input required="" name="nome" type="text"><span class="highlight"></span><span class="bar"></span>
+                    <label>Name</label>
+                </div>
+                <div class="group">
+                    <input required="" name="email" type="email"><span class="highlight"></span><span class="bar"></span>
+                    <label>Email</label>
+                </div>
+                <div class="group">
+                    <textarea required="" name="mensagem"></textarea><span class="highlight"></span><span class="bar"></span>
+                    <label>Message</label>
+                </div>
+                <input id="enviar" name="enviar" type="submit" value="Send message">
+            </form>
+        </div>
+
+        <div id="meios" class="wow bounceInRight">
+            <div class="meios" id="mail">
+                <div class="icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <a href="#">mail@mail.com.br</a>
+            </div>
+            <div class="meios">
+                <div class="icon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+                <div id="telefones">
+                    <a href="#">(44) 9999-9999</a>
+                    <br>
+                    <a href="#">(44) 9999-9999</a>
+                    <br>
+                    <a href="#">(44) 9999-9999</a>
+                </div>
+            </div>
+            <div class="meios">
+                <div class="icon">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <a href="#" target="_blank">Space Apps Challenge</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2017. All rights reserved.</p>
+    </footer>
+
+    <div class="scroll-up">
+        <a href="#home"><i class="fa fa-angle-up"></i></a>
+    </div>
+
+    <!--Scripts-->
+    <script src="jquery/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script/star.min.js"></script>
+    <script src="script/typed.js"></script>
+    <script src="script/wow.min.js"></script>
+    <script src="http://openlayers.org/en/v3.17.1/build/ol.js"></script>
+
+    <script src="script/main.js"></script>
+</body>
+
+</html>
