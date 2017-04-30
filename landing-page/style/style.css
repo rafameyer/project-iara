@@ -370,7 +370,8 @@ _:-ms-fullscreen, :root figure {
   padding-right: 0;
   padding-bottom: 150px; }
   #portfolio p {
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
   #portfolio .cabeca {
     padding-left: 25px;
     padding-right: 25px;
